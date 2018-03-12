@@ -1,8 +1,9 @@
-FROM alpine:3.6
+FROM alpine:3.7
 
-MAINTAINER Sergii Nuzhdin <ipaq.lw@gmail.com@gmail.com>
+MAINTAINER Sergii Nuzhdin <ipaq.lw@gmail.com>
+MAINTAINER Nenad Vasic <n.vasic@cubeteam.com>
 
-ENV KUBE_LATEST_VERSION="v1.6.4"
+ENV KUBE_LATEST_VERSION=v1.9.3
 
 RUN apk add --update ca-certificates \
  && apk add --update -t deps curl \
